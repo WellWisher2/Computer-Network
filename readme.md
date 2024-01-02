@@ -35,8 +35,9 @@ $ns run
 ```
 
 # AWK file:
+## (Open a new editor using “vi command” and write awk file and save with “.awk” extension) 
 ```
-(Open a new editor using “vi command” and write awk file and save with “.awk” extension) 
+
 BEGIN{ c=0;}
 {
 if($1= ="d")
@@ -44,8 +45,7 @@ if($1= ="d")
 printf("%s\t%s\n",$5,$11);
 }
 }
-END{ printf("The number of packets dropped is %d\n",c); 
-
+END{ printf("The number of packets dropped is %d\n",c); }
 ```
 
 

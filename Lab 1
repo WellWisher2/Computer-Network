@@ -1,4 +1,4 @@
-# LAB 1
+#LAB 1
 
 ```
 set ns [new Simulator] # Letter S is capital 

@@ -1,4 +1,4 @@
-#LAB 1
+# LAB 1
 
 ```
 set ns [new Simulator] # Letter S is capital 
@@ -32,9 +32,10 @@ $ns connect $udp0 $null0
 $ns at 0.1 "$cbr0 start" 
 $ns at 1.0 "finish" 
 $ns run
+```
 
-
-AWK file:
+# AWK file:
+```
 (Open a new editor using “vi command” and write awk file and save with “.awk” extension) 
 BEGIN{ c=0;}
 {

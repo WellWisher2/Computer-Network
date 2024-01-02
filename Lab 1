@@ -1,3 +1,6 @@
+# LAB 1
+
+```
 set ns [new Simulator] # Letter S is capital 
 set nf [open lab1.nam w] # open a nam trace file in write mode 
 $ns namtrace-all $nf # nf nam filename 
@@ -41,3 +44,7 @@ printf("%s\t%s\n",$5,$11);
 }
 }
 END{ printf("The number of packets dropped is %d\n",c); 
+
+```
+
+

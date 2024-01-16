@@ -1,7 +1,8 @@
 # 2. Implement simple ESS and with transmitting nodes in wire-less LAN by simulation and determine the throughput with respect to transmission of packets.
 
-# .tcl file:
+## .tcl file:
 
+```
 set ns [new Simulator]
 set tf [open lab4.tr w]
 $ns trace-all $tf
@@ -67,9 +68,11 @@ proc finish {} {
 }
 $ns at 250 "finish"
 $ns run
+```
 
-# .awk file:
+## .awk file:
 
+```
 BEGIN {
  c1 = 0;
  c2 = 0;
@@ -94,3 +97,4 @@ END {
  printf("The throughput from n0 to n1 is %f Mbps\n", (c1 * p1 * 8) / (t1 * 1000000));
  printf("The throughput from n1 to n2 is %f Mbps\n", (c2 * p2 * 8) / (t2 * 1000000));
 }
+```

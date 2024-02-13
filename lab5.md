@@ -7,21 +7,21 @@ public class CRCDemo
 static String msg;
 static String genPoly = "10001000000100001";
 
-static char t[] = new char[128]; /* Array for message appended with checksum */
-static char cs[] = new char[128]; /* Temporary array for checksum calculation */
-staticchar g[] = new char[128]; /* Array to store generator polynomial */
+static char t[] = new char[128]; 
+static char cs[] = new char[128]; 
+staticchar g[] = new char[128]; 
 staticintmlen,glen,x,c,flag=0,test;
 public static void main(String [] args)
 {
 Scanner in = new Scanner(System.in);
 System.out.println("Enter the message to be transferred");
 msg = in.nextLine();
-mlen = msg.length(); /* Length of the original message */
+mlen = msg.length(); 
 for(inti=0;i<mlen;i++)
 t[i] = msg.charAt(i);
 System.out.println("Predefined Generator Polynomial is: " + genPoly);
 g = genPoly.toCharArray();
-glen = genPoly.length(); /* Length of Generator Polynomial */
+glen = genPoly.length();
 for(x=mlen;x<(mlen+glen-1);x++)
 t[x] = '0';
 System.out.println("Zero extended message is: "+ new String(t));

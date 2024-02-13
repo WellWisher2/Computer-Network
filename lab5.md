@@ -6,7 +6,7 @@ public class CRCDemo
 {
 static String msg;
 static String genPoly = "10001000000100001";
-//static String genPoly = "1101";
+
 static char t[] = new char[128]; /* Array for message appended with checksum */
 static char cs[] = new char[128]; /* Temporary array for checksum calculation */
 staticchar g[] = new char[128]; /* Array to store generator polynomial */
@@ -25,10 +25,9 @@ glen = genPoly.length(); /* Length of Generator Polynomial */
 for(x=mlen;x<(mlen+glen-1);x++)
 t[x] = '0';
 System.out.println("Zero extended message is: "+ new String(t));
-crc(); /* Checksum computation */
+crc(); 
 System.out.println("CheckSum is:" + new String(cs));
-/* Subtract the checksum from zero extended message which means
-we do simple "XORing" */
+
 for(x=mlen;x<mlen+glen-1;x++)
 t[x] = cs[x-mlen];
 System.out.println("Final codeword generated is:"+ new String(t));
@@ -41,7 +40,7 @@ x = in.nextInt();
 t[x] = (t[x]=='0')?'1':'0';
 System.out.println("Errorneous data :"+ new String(t));
 }
-crc(); // computation at receiver side
+crc(); 
 for(x=0;x<(glen-1); x++)
 {
 if(cs[x] =='1')

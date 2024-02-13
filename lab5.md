@@ -9,8 +9,8 @@ static String genPoly = "10001000000100001";
 
 static char t[] = new char[128]; 
 static char cs[] = new char[128]; 
-staticchar g[] = new char[128]; 
-staticintmlen,glen,x,c,flag=0,test;
+static char g[] = new char[128]; 
+static int mlen,glen,x,c,flag=0,test;
 public static void main(String [] args)
 {
 Scanner in = new Scanner(System.in);
